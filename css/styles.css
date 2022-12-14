@@ -6,6 +6,7 @@
   --white-color: #ffffff;
   --secondary-title-color: #f4f4fd;
   --secondary-text-color: #e7e9fc;
+  --company-color: #8e8f99;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -252,20 +253,26 @@ body {
 
 /* Team section */
 
-.icon-instagram {
+.icon-social {
   display: block;
   width: 16px;
   height: 16px;
   fill: var(--white-color);
 }
-.icon-list {
+.icon-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--accent-color);
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
 }
 .img-description.style {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -373,6 +380,53 @@ body {
   color: var(--secondary-text-color);
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
+}
+
+/* customers */
+
+.icon-customers:hover,
+.icon-customers:active {
+  fill: var(--accent-color);
+}
+.customers-item:hover,
+.customers-item:active {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.customers-item {
+  display: flex;
+  width: 168px;
+  height: 88px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--company-color);
+  border-radius: 4px;
+  background-color: var(--white-color);
+  color: var(--company-color);
+}
+.icon-customers {
+  display: block;
+  width: 104px;
+  height: 56px;
+  fill: var(--company-color);
+}
+.customers-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* portfolio */
